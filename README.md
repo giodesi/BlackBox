@@ -1,4 +1,4 @@
-# blackbox
+# BlackBox
 **a SAT technology planning system**:  
 **blackbox = satplan + graphplan**  
 
@@ -14,9 +14,9 @@ Blackbox is a planning system that works by converting problems specified in STR
 
 ### installing blackbox
 
-*   Download and run the pre-compiled Linux, Mac OS X, or Windows binaries, or clone the source and compile.  Note that compilation requires flex and bison.  
+*   Download and run the pre-compiled Linux, Mac OS X, or Windows binaries, or clone the source and compile.Â  Note that compilation requires flex and bison.  
 
-*   The Linux binary is an 32-bit application.  If you are running a 64-bit Linux implementation that does not already have the necessary 32-bit libraries installed, please see [this askubuntu page](https://askubuntu.com/questions/454253/how-to-run-32-bit-app-in-ubuntu-64-bit).
+*   The Linux binary is an 32-bit application.Â  If you are running a 64-bit Linux implementation that does not already have the necessary 32-bit libraries installed, please see [this askubuntu page](https://askubuntu.com/questions/454253/how-to-run-32-bit-app-in-ubuntu-64-bit).
 *   Looking for SATPLAN-2004/2006? Then go to the [SATPLAN](../index.htm) home page instead.
 
 ### using blackbox
@@ -38,11 +38,11 @@ The best solver to use is [Chaff](http://www.princeton.edu/%7Echaff/software.htm
 
 Problem domains and problem instances are specifed using the STRIPS subset of the [Planning Domain Definition Language (PDDL)](https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language). Blackbox differs from the offical language in the following ways:
 
-*   Blackbox assumes that all parameters to an operator must be bound to different objects. Therefore, inequality preconditions are not needed (and are ignored if present).  Strict equality conditions are unnecessary (simply use the same variable).
+*   Blackbox assumes that all parameters to an operator must be bound to different objects.Â Therefore, inequality preconditions are not needed (and are ignored if present).Â  Strict equality conditions are unnecessary (simply use the same variable).
 *   All of the effects of an action must appear negated in the precondition of the action. Blackbox won't complain, but the output will be unpredictable.
 *   (:requirements) may be :strips, :equality, and/or :typing.
-*   Only simple typing information is supported.  In operator files, variables and objects should only have atomic types. The (:types) constructor should contain only a list of types (do not try to create subtypes or use fluents). In a fact file, an object can be given several types by use of the (either) construct. For example:  
-            (:objects  lincolncenter - LOCATION  jfk - (either AIRPORT  LOCATION))
+*   Only simple typing information is supported.Â  In operator files, variables and objects should only have atomic types. The (:types) constructor should contain only a list of types (do not try to create subtypes or use fluents). In a fact file, an object can be given several types by use of the (either) construct. For example:  
+    Â Â Â Â Â Â Â  (:objectsÂ  lincolncenter - LOCATIONÂ  jfk - (either AIRPORTÂ  LOCATION))
 *   (:constants) and negated preconditions are not supported.
 *   Input is case-insensitive.
 *   All (:objects) must be declared in the problem instance. This include numbers used as arguments to operators.
