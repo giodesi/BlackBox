@@ -2,6 +2,10 @@
 **a SAT technology planning system**:  
 **blackbox = satplan + graphplan**  
 
+All materials is taken from https://henrykautz.com/satplan/index.htm
+
+Compile the code depending on your system architecture or more generally follow the following instructions (from the above website).
+
 ### [Source - Version 45](https://gitlab.com/HenryKautz/BlackBox)
 
 ### [Linux Binary Version 45](http://www.cs.rochester.edu/u/kautz/satplan/blackbox/linux/blackbox)
